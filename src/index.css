@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+/* @media screen and (max-width:780px){
+    body{
+        overflow-x: hidden;
+    }
+} */
+
+.slick-slide > div{
+    margin: 0 10px;
+}
