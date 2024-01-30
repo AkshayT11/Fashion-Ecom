@@ -1,11 +1,12 @@
 import React from 'react'
+import collection from "/img/collection.png"
 
 const Collections = () => {
   return (
     <div className='h-screen lg:h-[70ch] lg:flex-row flex flex-col justify-center items-center  bg-green-300 px-5 lg:px-32 mt-14 '>
         {/* img section */}
         <div className='flex justify-center w-full lg:w-2/4 pt-6'>
-            <img src="src/assets/img/collection.png" alt="collecImg" />
+            <img src={collection} alt="collecImg" />
         </div>
         {/* content */}
         <div className='lg:w-2/4 w-full flex flex-col gap-2 lg:text-start pt-5'>
