@@ -18,7 +18,7 @@ const CartProduct = ({id,img,title,price,qty}) => {
                 <h2 className='font-semibold text-[17px] '>{title} </h2>
                 <div className='flex justify-center gap-4 items-center '>
                 <FiMinus 
-                onClick={()=> dispatch(decrementQty({id})) }
+                onClick={()=> qty > 1 ? dispatch(decrementQty({id})) : qty =0 }
                 size={20}  className='border border-blue-400 rounded-md p-1 hover:bg-red-500 cursor-pointer' />
                 <p className='font-semibold text-sm text-gray'> {qty} </p>
                 <FaPlus 
